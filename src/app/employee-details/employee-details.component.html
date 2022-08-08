@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div >
+        <button (click)="getEmployes()">Show Posts</button>
+        <div *ngFor="let employee of employess">
+            <div *ngIf="employee.id < '20'"  class="card">
+                <div *ngIf="employee.id < '20'">
+                    ID: {{employee.id}}
+            </div>
+            <div *ngIf="employee.id < '20'">
+                Title: {{employee.title}}
+            </div>
+            <div *ngIf="employee.id < '20'">
+                Body: {{employee.body}}
+            </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+
